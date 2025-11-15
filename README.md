@@ -1,19 +1,18 @@
-Steam-Game-Recommender:
-
 Link to Dataset: https://www.kaggle.com/datasets/artermiloff/steam-games-dataset
 
-This is a simple game recommender system built in Python using content-based filtering.
+# Unsupervised Steam Game Recommender
 
-How it Works
-1. Loads a CSV file containing game names and genres.
-2. Converts genres into numeric vectors using TF-IDF.
-3. Calculates similarity between games using cosine similarity.
-4. Returns the top 5 games most similar to a chosen game.
+This is a content-based game recommender using **unsupervised learning**. It recommends similar games based on genres using TF-IDF feature extraction and cosine similarity.
 
-Usage:
-(Replace "Hades" with any game name to get recommendations.)
+## How it Works
+1. Load the dataset (name and genres of games).
+2. Preprocess missing values.
+3. Convert genres into numeric vectors using TF-IDF.
+4. Compute similarity of the input game to all other games.
+5. Return top 5 most similar games.
+
+## Usage (Replace "Hades" With Any Game You Want)
 ```python
+from game_recommender import recommend_games_safe
 
-from game_recommender import recommend_games_lazy_safe
-
-recommend_games_lazy_safe("Hades")
+recommend_games_safe("Hades")
