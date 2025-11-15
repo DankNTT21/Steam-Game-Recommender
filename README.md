@@ -1,5 +1,7 @@
 Steam-Game-Recommender:
 
+Link to Dataset: https://www.kaggle.com/datasets/artermiloff/steam-games-dataset
+
 This is a simple game recommender system built in Python using content-based filtering.
 
 How it Works
